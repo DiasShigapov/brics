@@ -1,3 +1,5 @@
+
+
 function tabsHandler(){
   const tabs = document.querySelectorAll('.tab')
   const tabContents = document.querySelectorAll('.tab__content')
