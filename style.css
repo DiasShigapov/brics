@@ -20,6 +20,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: unbounded;
     /* font-family: unbounded; */
 }
 
@@ -209,6 +210,29 @@ body {
 header {
     padding: 30px 0;
     width: 100%;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    padding: 0 10px;
+}
+
+.modal__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__contacts a:first-of-type {
+    margin-bottom: 10px;
+}
+
+.modal__contacts .header__contacts {
+    margin-top: 10px;
+    font-size: 16px;
+    align-items: start;
 }
 
 
@@ -629,7 +653,7 @@ button {
         font-size: 1vw;
     }
     .left__txt--item > h2, .right__txt--item > h3  {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
     .top__info {
         font-size: 5.2vw;
@@ -767,6 +791,20 @@ button {
 
 @media (max-width: 768px) {
 
+    .header__contacts {
+        display: none;
+    }
+    
+    .modal__contacts {
+    }
+
+    .header__contacts a:first-of-type {
+    }
+    
+    .modal__contacts .header__contacts {
+
+        display: flex;
+    }
 
     .modal-content {
         padding: 25px 15px 35px 15px;
